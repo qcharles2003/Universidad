@@ -124,7 +124,7 @@ def generar_estadisticas(entradas: List[Entrada], ventas_restaurante: List[Venta
 
 ##--Funciones para mostrar y graficar estadísticas--##
 def mostrar_estadisticas(promedio_gasto_vip, asistencia_partidos):
-    print(f"Promedio de gasto VIP: {promedio_gasto_vip:.2f}€")
+    print(f"Promedio de gasto VIP: {promedio_gasto_vip:.2f}$")
 
     print("Asistencia a partidos (de mejor a peor):")
     for partido, data in sorted(asistencia_partidos.items(), key=lambda item: item[1]['asistencia'] / item[1]['boletos_vendidos'], reverse=True):
